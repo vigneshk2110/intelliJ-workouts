@@ -6,7 +6,6 @@ public class CountConsonents {
         String s1 = "VI--H";
         int res = countConsonents(s1,0);
         System.out.println(res);
-
     }
 
     private static int countConsonents(String s1, int index) {

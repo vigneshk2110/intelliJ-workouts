@@ -14,7 +14,7 @@ public class CountNinNum1 {
         if (num<=0) return count;
 
         if (num%10 == toFind){
-            num = num/10;
+            num /= 10;
             if (num%10 == toFind) {
                 count += 2;
             }
@@ -22,7 +22,6 @@ public class CountNinNum1 {
                 count += 1;
             }
             num*=10;
-
         }
 
         return  countNfromNum(num/10,toFind,count);

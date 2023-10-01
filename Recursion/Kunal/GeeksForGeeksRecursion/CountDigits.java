@@ -2,20 +2,25 @@ package GeeksForGeeksRecursion;
 
 public class CountDigits {
     public static void main(String[] args) {
-        int num = 12345678;
-        int digits = countDigits(num,1);
+        int num = 342391;
+        int digits = countDigits(num,0);
         System.out.println(digits);
     }
 
     private static int countDigits(int num, int count) {
-        if (num<=9)
-            return count;
+        if (num<=9) return ++count;
 
-        return countDigits(num/10, count)
-                +
-                count;
-
+        return countDigits(num/10, ++count);
     }
+
+//    private static int countDigits(int num, int count) {
+//        if (num<=9)
+//            return ++count;
+//
+//        return countDigits(num/10, count)
+//                +
+//                ++count;
+//    }
 
 //    private static int countDigits(int num, int count) {
 //        while (num>0){

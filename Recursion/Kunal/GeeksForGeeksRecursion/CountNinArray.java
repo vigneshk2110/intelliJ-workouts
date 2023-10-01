@@ -10,8 +10,8 @@ public class CountNinArray {
     private static int countN(int[] array, int target, int index, int count) {
         if (index == array.length) return count;
 
-        if (array[index] == target) return countN(array, target, index+1, count+1);
+        if (array[index] == target) return countN(array, target, ++index, ++count);
 
-        return countN(array, target, index+1, count);
+        return countN(array, target, ++index, count);
     }
 }

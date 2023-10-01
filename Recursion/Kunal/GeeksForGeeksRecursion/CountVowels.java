@@ -9,7 +9,6 @@ public class CountVowels {
     }
 
     private static int countVowels(String s1) {
-        
         return helper(s1,0,0);
     }
 

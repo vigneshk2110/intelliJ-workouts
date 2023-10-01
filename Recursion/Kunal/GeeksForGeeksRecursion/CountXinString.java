@@ -10,7 +10,7 @@ public class CountXinString {
     private static int countX(String str, int count , char toFind) {
         if (str.isEmpty()) return count;
 
-        count +=  (str.charAt(0) == toFind? 1:0);
+        count +=  str.charAt(0) == toFind? 1:0;
 
         return  countX(str.substring(1), count,toFind);
     }

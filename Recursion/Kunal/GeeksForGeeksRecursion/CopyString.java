@@ -5,14 +5,12 @@ import java.util.Arrays;
 public class CopyString {
     public static void main(String[] args) {
         String s1 = "vignesh";
-        String s2 = "Kannan";
-
         char[] c1 =s1.toCharArray();
         char[] c2 = new char[c1.length];
 
         copy1to2(c1,c2,0);
 
-        System.out.println(Arrays.toString(c2));
+//        System.out.println(Arrays.toString(c2));
         System.out.println(String.valueOf(c2));
 
     }

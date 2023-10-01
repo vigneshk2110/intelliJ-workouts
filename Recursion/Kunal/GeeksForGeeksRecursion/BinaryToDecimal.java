@@ -2,13 +2,14 @@ package GeeksForGeeksRecursion;
 
 public class BinaryToDecimal {
     public static void main(String[] args) {
-        int biNum = 10101110;
+        int biNum =
+//                10101110;
+        1101;
         int result = convert2Decimal(biNum);
         System.out.println(result);
     }
 
     private static int convert2Decimal(int biNum) {
-
         return helper(biNum, 0, 0);
     }
 

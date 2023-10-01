@@ -26,5 +26,6 @@ public class BinarySearch {
             return searchHelper(array, start, mid, target);
         }
         return searchHelper(array, mid+1, end, target);
+
     }
 }
